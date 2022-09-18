@@ -1,56 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
 
 :root {
-	--text-color: #f7e0fd;
-	--text-color-darker: #bbaabf;
-	--background-color: #100a1f;
+  --text-color: #f7e0fd;
+  --text-color-darker: #bbaabf;
+  --background-color: #272533;
 }
 
 body {
-	margin: 0;
+  margin: 0;
 
-	font-family: "Comfortaa", cursive;
+  font-family: "Comfortaa", cursive;
 }
 
 .landing {
-	width: 100vw;
-	height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
-	background-color: var(--background-color);
-	color: var(--text-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
 
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .landing img {
-	width: 15em;
-	height: 15em;
+  width: 15em;
+  height: 15em;
 
-	border-radius: 5em;
+  border-radius: 5em;
 }
 
 .landing input {
-	width: 10em;
-	height: 3.3em;
+  width: 10em;
+  height: 3.3em;
 
-	background-color: var(--text-color);
-	color: var(--background-color);
+  background-color: var(--text-color);
+  color: var(--background-color);
 
-	border: none;
-	border-radius: 2.5em;
+  border: none;
+  border-radius: 2.5em;
 
-	font-family: "Comfortaa", cursive;
-	font-weight: bold;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
 
-	transition: 0.3s;
+  transition: 0.3s;
 }
 
 .landing input:hover {
-	background-color: var(--text-color-darker);
+  background-color: var(--text-color-darker);
 
-	cursor: pointer;
+  cursor: pointer;
 }
