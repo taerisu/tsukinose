@@ -1,5 +1,5 @@
-import { Command, Component, Event } from "../types/mod.ts";
-import { Interaction } from "../deps.ts";
+import { Command, Component, Event } from "@types";
+import { Interaction } from "harmony";
 
 const event: Event = {
   name: "interactionCreate",

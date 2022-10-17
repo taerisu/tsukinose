@@ -1,3 +1,3 @@
-import Client from "./core.ts";
+import Client from "@core";
 
 new Client().init();

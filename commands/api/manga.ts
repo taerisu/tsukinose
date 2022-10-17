@@ -1,5 +1,5 @@
-import { Command, SearchResult } from "../../types/mod.ts";
-import { ActionRowComponent, Embed } from "../../deps.ts";
+import { Command, SearchResult } from "@types";
+import { ActionRowComponent, Embed } from "harmony";
 
 const command: Command = {
   name: "manga",
@@ -14,7 +14,7 @@ const command: Command = {
   ],
   run: async (client, interaction) => {
     const query = interaction.options.find(
-      (option) => option.name == "query",
+      (option) => option.name == "query"
     )?.value;
 
     const response: SearchResult[] = await (

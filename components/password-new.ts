@@ -1,5 +1,5 @@
-import { ActionRowComponent, Embed } from "../../deps.ts";
-import { Component } from "../../types/mod.ts";
+import { ActionRowComponent, Embed } from "harmony";
+import { Component } from "@types";
 
 const component: Component = {
   customId: /password_(.*)/gi,

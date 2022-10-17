@@ -1,5 +1,5 @@
-import { Command } from "../../types/mod.ts";
-import { Embed, User } from "../../deps.ts";
+import { Command } from "@types";
+import { Embed, User } from "harmony";
 
 const command: Command = {
   name: "user",
@@ -14,7 +14,7 @@ const command: Command = {
   ],
   run: async (client, interaction) => {
     const user: User | undefined = await client.users.get(
-      interaction.options.find((option) => option.name == "user")?.value,
+      interaction.options.find((option) => option.name == "user")?.value
     );
 
     if (!user) {

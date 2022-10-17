@@ -1,5 +1,5 @@
-import { Command } from "../../types/mod.ts";
-import { ApplicationCommandOptionBase, Embed } from "../../deps.ts";
+import { Command } from "@types";
+import { ApplicationCommandOptionBase, Embed } from "harmony";
 
 const command: Command = {
   name: "help",
@@ -14,7 +14,7 @@ const command: Command = {
   ],
   run: (client, interaction) => {
     const request = interaction.options.find(
-      (option) => option.name == "command",
+      (option) => option.name == "command"
     )?.value;
 
     if (request) {
@@ -59,13 +59,13 @@ const command: Command = {
         name: `/${command.name} ${
           command.options
             ? command.options
-              .map(
-                (option: ApplicationCommandOptionBase) =>
-                  `<${
-                    option.required ? "" : ""
-                  }${option.name} [${option.description}]>`,
-              )
-              .join(" ")
+                .map(
+                  (option: ApplicationCommandOptionBase) =>
+                    `<${option.required ? "" : ""}${option.name} [${
+                      option.description
+                    }]>`
+                )
+                .join(" ")
             : ""
         }`,
         value: command.description ? command.description : "...",

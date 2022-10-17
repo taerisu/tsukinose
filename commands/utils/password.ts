@@ -1,5 +1,5 @@
-import { ActionRowComponent, Embed } from "../../deps.ts";
-import { Command } from "../../types/mod.ts";
+import { Command } from "@types";
+import { ActionRowComponent, Embed } from "harmony";
 
 export const command: Command = {
   name: "password",
@@ -18,7 +18,7 @@ export const command: Command = {
     let password = "";
 
     const passwordLength: number = interaction.options.find(
-      (option) => option.name == "length",
+      (option) => option.name == "length"
     )?.value;
 
     for (let i = 0, n = charset.length; i < passwordLength; ++i) {

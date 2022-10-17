@@ -1,5 +1,5 @@
-import { Event } from "../types/mod.ts";
-import { GuildChannel, Message } from "../deps.ts";
+import { Event } from "@types";
+import { GuildChannel, Message } from "harmony";
 
 const event: Event = {
   name: "messageCreate",

@@ -1,5 +1,5 @@
-import ExtendedClient from "../core.ts";
-import { Event } from "../types/mod.ts";
+import ExtendedClient from "@core";
+import { Event } from "@types";
 import ready from "./ready.ts";
 import interactionCreate from "./interactionCreate.ts";
 import messageCreate from "./messageCreate.ts";

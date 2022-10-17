@@ -1,5 +1,5 @@
-import { Command } from "../../types/mod.ts";
-import { ActionRowComponent, Embed } from "../../deps.ts";
+import { Command } from "@types";
+import { ActionRowComponent, Embed } from "harmony";
 
 const command: Command = {
   name: "lmgtfy",
@@ -14,14 +14,10 @@ const command: Command = {
   ],
   run: (client, interaction) => {
     const query = interaction.options.find(
-      (option) => option.name == "query",
+      (option) => option.name == "query"
     )?.value;
 
-    const link = `https://lmgtfy.app/?q=${
-      encodeURI(
-        query.replace(/ /g, "+"),
-      )
-    }`;
+    const link = `https://lmgtfy.app/?q=${encodeURI(query.replace(/ /g, "+"))}`;
 
     const embed = new Embed()
       .setColor(client.env.BOT_COLOR)
