@@ -16,8 +16,7 @@ const event: Event = {
     const channel = message.channel as unknown as GuildChannel;
 
     console.log(
-      `[${date}] [${message.guild
-        ?.name} / ${channel.name} / ${message.author.tag}]: ${message.content}`,
+      `[${date}] [${message.guild?.name} / ${channel.name} / ${message.author.tag}]: ${message.content}`,
     );
 
     let allEmbeds: string[] = [];
