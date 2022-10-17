@@ -14,6 +14,7 @@ jobs:
       - name: Lint
         run: deno lint
   format:
+    name: Format
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
