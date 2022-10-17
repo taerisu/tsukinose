@@ -34,6 +34,6 @@ BOT_TOKEN="YOUR_TOKEN"
 BOT_COLOR="#925dc4"
 ```
 
-1. Start bot via `make start`
+1. Start bot via `deno task start`
 
 Now you have running bot!
