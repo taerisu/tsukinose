@@ -1,5 +1,5 @@
-import { Command } from "../../types/mod.ts";
-import { ActionRowComponent, Embed, User } from "../../deps.ts";
+import { Command } from "@types";
+import { ActionRowComponent, Embed, User } from "harmony";
 
 const command: Command = {
   name: "avatar",

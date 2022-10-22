@@ -1,5 +1,5 @@
-import { Command } from "../../types/mod.ts";
-import { ApplicationCommandOptionBase, Embed } from "../../deps.ts";
+import { Command } from "@types";
+import { ApplicationCommandOptionBase, Embed } from "harmony";
 
 const command: Command = {
   name: "help",

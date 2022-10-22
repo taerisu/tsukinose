@@ -1,7 +1,7 @@
-import ExtendedClient from "../core.ts";
-import { Component } from "../types/mod.ts";
-import passwordNew from "./buttons/password-new.ts";
-import deleteMessage from "./buttons/delete_message.ts";
+import ExtendedClient from "@core";
+import { Component } from "@types";
+import passwordNew from "./password-new.ts";
+import deleteMessage from "./delete_message.ts";
 
 const Register = (client: ExtendedClient, component: Component) => {
   client.components.set(component.customId, component);

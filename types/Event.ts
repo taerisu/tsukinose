@@ -1,5 +1,5 @@
-import Client from "../core.ts";
-import { ClientEvents } from "../deps.ts";
+import Client from "@core";
+import { ClientEvents } from "harmony";
 
 interface Run {
   (client: Client, ...args: eventArgs): void;

@@ -1,10 +1,11 @@
-import { Client, Collection, GatewayIntents, serve } from "./deps.ts";
-import { Command, Component, Event } from "./types/mod.ts";
-import GetCommands from "./commands/mod.ts";
-import GetEvents from "./events/mod.ts";
-import GetComponents from "./components/mod.ts";
-import env from "./utils/config.ts";
-import server from "./utils/server.ts";
+import { Client, Collection, GatewayIntents } from "harmony";
+import { serve } from "std/http/server.ts";
+import { Command, Component, Event } from "@types/mod.ts";
+import GetCommands from "@commands/mod.ts";
+import GetEvents from "@events/mod.ts";
+import GetComponents from "@components/mod.ts";
+import env from "@utils/config.ts";
+import server from "@utils/server.ts";
 
 class ExtendedClient extends Client {
   public commands: Collection<string, Command> = new Collection();
@@ -13,7 +14,7 @@ class ExtendedClient extends Client {
   public env = env;
 
   public async init() {
-    this.connect(this.env.BOT_TOKEN, [
+    await this.connect(this.env.BOT_TOKEN, [
       GatewayIntents.DIRECT_MESSAGES,
       GatewayIntents.GUILDS,
       GatewayIntents.GUILD_MESSAGES,

@@ -1,5 +1,5 @@
-import { Event } from "../types/mod.ts";
-import { ApplicationCommandPartial } from "../deps.ts";
+import { Event } from "@types";
+import { ApplicationCommandPartial } from "harmony";
 
 const event: Event = {
   name: "ready",

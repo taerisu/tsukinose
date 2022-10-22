@@ -1,5 +1,5 @@
-import { Code, Command } from "../../types/mod.ts";
-import { ActionRowComponent, Embed } from "../../deps.ts";
+import { Code, Command } from "@types";
+import { ActionRowComponent, Embed } from "harmony";
 
 const command: Command = {
   name: "genshincodes",

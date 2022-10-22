@@ -1,5 +1,5 @@
-import { Command, SearchResult } from "../../types/mod.ts";
-import { ActionRowComponent, Embed } from "../../deps.ts";
+import { Command, SearchResult } from "@types";
+import { ActionRowComponent, Embed } from "harmony";
 
 const command: Command = {
   name: "manga",

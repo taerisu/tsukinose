@@ -1,5 +1,5 @@
-import Client from "../core.ts";
-import { Interaction, MessageComponentInteraction } from "../deps.ts";
+import Client from "@core";
+import { Interaction, MessageComponentInteraction } from "harmony";
 
 interface Run {
   (client: Client, interaction: MessageComponentInteraction):

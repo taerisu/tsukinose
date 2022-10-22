@@ -12,8 +12,8 @@
 # Overview
 
 Tsukinose is [harmony](https://github.com/harmonyland/harmony) bot, made in
-[Deno](https://deno.land/). Vignette April Tsukinose is a cute girl from Gabriel DropOut manga
-:3.
+[Deno](https://deno.land/). Vignette April Tsukinose is a cute girl from Gabriel
+DropOut manga :3.
 
 # How to use
 
@@ -34,6 +34,6 @@ BOT_TOKEN="YOUR_TOKEN"
 BOT_COLOR="#925dc4"
 ```
 
-1. Start bot via `make start`
+1. Start bot via `deno task start`
 
 Now you have running bot!

@@ -1,4 +1,4 @@
-import { config } from "../deps.ts";
+import { config } from "dotenv";
 
 const inits = () => {
   if (Deno.env.get("MODE") === "DENODEPLOY") {

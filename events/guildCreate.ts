@@ -1,5 +1,5 @@
-import { Event } from "../types/mod.ts";
-import { Embed, Guild } from "../deps.ts";
+import { Event } from "@types/mod.ts";
+import { Embed, Guild } from "harmony";
 
 const event: Event = {
   name: "guildCreate",

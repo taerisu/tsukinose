@@ -1,5 +1,5 @@
-import { Command } from "../../types/mod.ts";
-import { Embed } from "../../deps.ts";
+import { Command } from "@types";
+import { Embed } from "harmony";
 
 const command: Command = {
   name: "coin",
